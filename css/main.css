@@ -1,0 +1,21 @@
+body {
+	font-family: 'Pangolin', cursive
+}
+
+.header {
+	background: url(../img/img1m.jpg) no-repeat;
+	background-size: cover;
+
+}
+
+
+
+@media all and (orientation: landscape), all and (min-width: 480px) { 
+	
+	.header {
+	background: url(../img/img1.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+	}
+ }
