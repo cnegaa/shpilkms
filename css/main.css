@@ -1,13 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
 body {
 	font-family: 'Pangolin', cursive;
 	font-size: 28px;
 	color: #686862;
 }
 
+a {
+	cursor: pointer;
+	text-decoration: none;;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100%;
+}
+
 .header {
-	background: url(../img/img1m.jpg) no-repeat ;
-	background-size: contain;
-	height: 200px;
+	background: url(../img/header.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    height: 40vh;
+}
+
+.header-brand-img {
+	width: 60%;
+	height: auto;
+}
+
+.header-burger {
+	color: white;
+	padding: 0 5%;
 }
 
 h1 {
@@ -24,7 +64,7 @@ h1 {
 	font-size: 14px;
 }	
 
-@media all and (orientation: landscape), all and (min-width: 390px) { 
+/*@media all and (orientation: landscape), all and (min-width: 390px) { 
 	
 	.header {
 	background: url(../img/img1.jpg) no-repeat;
@@ -32,4 +72,4 @@ h1 {
 	height: 100vh;
 
 	}
- }
+ }*/
