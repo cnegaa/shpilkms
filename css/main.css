@@ -5,14 +5,14 @@
 	padding: 0;
 }
 
-html, body {
+html {
 	height: 100%;
 }
 
-
 body {
+	height: 100%;
 	font-family: 'Comfortaa', cursive;
-	font-size: 16px;
+	font-size: 14px;
 	color: #000;
 }
 
@@ -54,24 +54,32 @@ ul, li {
 
 /*main class*/
 
-.wrapper {
+.wrapper { /*в desktop footer стоит не так как надо (если убратьь flex о все норм )*/
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	height: 100%;
 }
 
-.main-btn:hover { 
+/*.main-btn:hover { должно пригодится 
 	cursor: pointer;
+} 
+
+.main-btn: a hover { 
+	color: #fff;
 } 
 
 .main-btn:active {
  	background: #3c76b6; 
- } 
+ } */
 
 
 .container {
 	padding: 0;
+}
+
+.row {
+	margin: 0; /*если не поставить margin то в мобильной версии появляется отступ и прокрутка*/
 }
 /*header*/
 
@@ -94,8 +102,7 @@ ul, li {
 }
 
 
-
-.menu-nav, .social {
+.menu-nav, .social { 
 	display: none;
 
 }
@@ -119,7 +126,7 @@ ul, li {
 	display: none;
 }
 
-.theme-list {
+.theme-list { /*где должы быть эти классы в медиа или здесь */
 	display: flex;
 	justify-content: space-between;
 }
@@ -129,15 +136,6 @@ ul, li {
 	flex-direction: column;
 }
 
-/*.theme-link {
-	color: #000;
-}
-
-.theme-link:hover{
-	color: #FF0000;
-	cursor: pointer;
-}
-*/
 
 /*content*/
 
@@ -160,7 +158,7 @@ ul, li {
 	text-align: center;
 } 
 
-/*/*footer */
+/*footer */
 
 .footer {
 	background: #000;
@@ -181,9 +179,7 @@ ul, li {
 		justify-content: space-between;
 		align-items: center;
 		background: #fff;
-		height: 15%;
 		margin-bottom: 3%;
-		padding: 0 2% 0 2%;
 	}
 
 	.header-menu a {
@@ -199,9 +195,6 @@ ul, li {
 	.menu-social {
 		display: block;
 	}
-	.menu-toggler {
-		display: none;
-	}
 
 	.burger {
 		display: none;
@@ -212,29 +205,22 @@ ul, li {
 		margin: 0;
 		display: flex;
 		justify-content: space-between;
-
-}
+	}
 
 	.theme {
 		display: block;
-		padding-top: 25px;
-		height: 22%;
-		display: block;
 		background: #D4F2F3;
-		margin-bottom: 120px;
 	}
 
-
-
 }
+/*snezhana.efremova.98@bk.ru*/
 
 
+/*git config --global user.email "snezhana.efremova.98@bk.ru"
+git config --global user.name "sneggaa"
 
 
+snegaa
 
-
-
-
-
-
- }
+shpilkms
+*/
