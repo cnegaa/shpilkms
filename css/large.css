@@ -1,0 +1,69 @@
+ /*бук*/
+@media screen and (min-width: 992px) { 
+
+	/*main tags*/
+
+	.container-sm {
+		margin: auto;
+	}
+
+	.par {
+		display: block;
+	}
+	
+	.date {
+		margin-top: 15px;
+	}
+
+
+	/*main-promo*/
+
+	.main-promo-thirds {
+		display: block;
+	}
+
+	.main-promo-first, .main-promo-second {
+		display: none;
+	}
+
+	/*header*/
+
+	.header {
+		background-image: url('../img/header/main-header.jpg');
+		height: 500px;
+	}
+
+	.header-brand img {
+		width: 370px;
+		height: 150px;
+		}
+
+	/*menu*/
+
+	.nav-bar {
+		display: block;
+	}
+
+	.toggle {
+		display: none;
+	}
+
+	/*news-top*/
+
+	.news-top {
+		padding: 20px 0 20px 0;
+		font-size: 0.9em
+	}
+
+	.news-top_list_item {
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+	}
+	.news-top_list_item:hover {
+		background: none;
+	}
+
+		/*content*/
+
+}

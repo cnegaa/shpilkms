@@ -4,150 +4,201 @@
 	<meta charset="UTF-8">
 	<title>Shpilkms</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/medium.css">
+	<link rel="stylesheet" href="css/large.css">
 </head>
 <body>
 	<div class="wrapper">
 		<div class="main">
-			<header class="header" id="header">
-				<nav class="header-menu"> <!-- какой col поставить от 576рх и до 720px --> 
-					<div class="container">
-						<div class="row">
-							<div class="burger">
-								<a class="menu-toggler">
-									<i class="fas fa-bars fa-2x"></i>
-								</a>
-							</div>
-							<ul class="menu-nav col-md-5"> 
-								<li class="menu-nav-item">
-									<a href="#">Блог</a>
-								</li>
-								<li class="menu-nav-item">
-									<a href="#">Работа</a>
-								</li>
-								<li class="menu-nav-item">
-									<a href="#">Афиша</a>
-								</li>
-								<li class="menu-nav-item">
-									<a href="#">Цены</a>
-								</li>
-								<li class="menu-nav-item">
-									<a href="#">Теги</a>
-								</li>
-							</ul>
-							<ul class="social col-md-3 ml-auto ">
-								<li class="social-item">
-									<a href="#">
-										<i class="fab fa-instagram fa-2x"></i>
-									</a>
-								</li>
-								<li class="social-item">
-									<a href="#">
-										<i class="fab fa-vk fa-2x"></i>
-									</a>
-								</li>
-								<li class="social-item">
-									<a href="#">
-										<i class="fab fa-whatsapp fa-2x"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>	 
-				</nav>
-				<div class="header-logo text-center">
-					<h1>
-						Шпиль
-					</h1>
-					<span class="herder-logo-text">
-						про комсомольск
-					</span>
-				</div>
-			</header>
-			<div class="theme">
-				<i></i>
-				<div class="theme-content">
-					<div class="container">
-						<div class="row">
-							<div class="theme-list">
-								<div class="theme-list-item col-md-3">
-									<a href="#" class="mb-4">В выходные в ГСИ пройдет концерт скрипичной музыки</a>
-									<data>24/02/2020</data>
-								</div>
-								<div class="theme-list-item col-md-3">
-									<a href="#" class="mb-4">Стартовал прием заявок на театрально-образовательный форум «Науруз»</a>
-									<data>25/02/2020</data>
-								</div>
-								<div class="theme-list-item col-md-3">
-									<a href="#" class="mb-4">В Татарстане разработали татарскую клавиатуру для мобильных устройств</a>
-									<data>27/02/2020</data>
+			<div class="main-promo">
+				<img class="main-promo-img main-promo-first" src="img/main-promo/first.png">
+				<img class="main-promo-img main-promo-second" src="img/main-promo/second.png">
+				<img class="main-promo-img main-promo-thirds" src="img/main-promo/thirds.png">
+			</div>
+			<div class="header">
+				<div class="menu">
+					<div class="dropdown toggle">
+					  <button class="btn btn-light" type="button" id="dropdownMenuButton" 
+					  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-bars fa-2x"></i>
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#">Цены</a>
+					    <a class="dropdown-item" href="#">Работа</a>
+					    <a class="dropdown-item" href="#">Афиша</a>
+					    <a class="dropdown-item" href="#">Новости</a>
+					    <a class="dropdown-item" href="#">Фото</a>
+					    <a class="dropdown-item" href="#">Котики</a>
+					  </div>
+					</div>
+					<div class="nav-bar">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="nav-bar_list">
+										<li><a href="#">Цены</a></li>
+										<li><a href="#">Работа</a></li>
+										<li><a href="#">Афиша</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Фото</a></li>
+										<li><a href="#">Котики</a></li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="header-brand">
+						<img src="img/header/brand.png">
+					</div>
 				</div>
-				<a href=""></a>
+			</div>
+			<div class="news-top">
+				<div class="container">
+					<div class="row ">
+						<div class="col-md-12">
+							<ul class="news-top_list">
+								<li class="news-top_list_item">
+									<a href="#">В Татарстане начали регистрировать безработных для получения пособий онлайн</a>
+									<div class="news-top_list_item_date date">
+										<data>13.04.2020</data>
+									</div>
+								</li>
+								<li class="news-top_list_item">
+									<a href="#">Часть предприятий — открыть, похороны ограничить. Главное из решений оперштаба Татарстана</a>
+									<div class="news-top_list_item_date date">
+										<data>13.04.2020</data>
+									</div>
+								</li>
+								<li class="news-top_list_item">
+									<a href="#">Дина Гарипова представила песню «Ай, былбылым» из саундтрека сериала «Зулейха открывает глаза»</a>
+									<div class="news-top_list_item_date date">
+										<data>13.04.2020</data>
+									</div>
+								</li>
+								<li class="news-top_list_item">
+									<a href="#">
+										В казанском ИТ-парке открылся магазин без продавца
+									</a>
+									<div class="news-top_list_item_date date">
+										<data>13.04.2020</data>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="content">
-				<div class="news">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-md-5 col-lg-6 mb-2">
-								<div class="news-item">
-									<h2>Что происходит</h2>
-									<div class="news-item-img mb-2">
-										<img src="img/news/news1.png">
-									</div>
-									<div class="news-item-info">
-										<div class="news-item-info-text mb-3">
-											Lorem ipsum dolor sit amet, consectetuer adipiscingelit. Aenean commodo ligula eget dolor. Aenean massa. 
-										</div>
-										<div class="news-item-info-btn">
-											<a href="#" class="next-btn">
-												Читать далее
-											</a>
-										</div>
-									</div>
+				<div class="container">
+					<div class="row content_news">
+						<div class="col-sm-12 col-md-6 col-lg-6 content_news_first mr-auto">
+							<h1 class="content_news_first_title">
+								Что происходит
+							</h1>
+							<div class="content_news_first_poster">
+								<img  class="img-fluid" src="img/content/content1.JPG">
+							</div>
+							<div class="content_news_first_info">
+								<div class="content_news_first_info_text">
+									<a href="#">
+										Список. Благотворительные организации, которые сейчас особенно нуждаются в помощи
+									</a>
+									<p class="content_news_info_text_par par">
+										Кризисные центры, приюты и хосписы
+									</p>
+								</div>
+								<div class="content_news_info_date date date">
+									<data>13.04.2020</data>
 								</div>
 							</div>
-							<div class="col-12 col-md-5 col-lg-3 mb-2">
-								<div class="news-item">
-									<h2>Что происходит</h2>
-									<div class="news-item-img mb-2">
-										<img src="img/news/news1.png">
+						</div>
+						<div class="col-sm-12 col-md-3 col-lg-3 content_news_item">
+								<h2 class="content_news_title">
+									1Что 
+								</h2>
+								<div class="content_news_poster">
+									<img  class="img-fluid" src="img/content/content1.JPG">
+								</div>
+								<div class="content_news_info">
+									<div class="content_news_info_text">
+										<a href="#">
+											Список. Благотворительные организации, которые сейчас особенно нуждаются в помощи
+										</a>
+										<p class="content_news_info_text_par par">
+											Кризисные центры, приюты и хосписы
+										</p>
 									</div>
-									<div class="news-item-info">
-										<div class="news-item-info-text mb-3">
-											Lorem ipsum dolor sit amet, consectetuer adipiscingelit. Aenean commodo ligula eget dolor. Aenean massa. 
-										</div>
-										<div class="news-item-info-btn">
-											<a href="#" class="next-btn">
-												Читать далее
-											</a>
-										</div>
+									<div class="content_news_info_date date">
+										<data>13.04.2020</data>
 									</div>
 								</div>
-							</div>
-							<div class="col-12 col-md-5 col-lg-3 mb-2">
-								<div class="news-item">
-									<h2>Что происходит</h2>
-									<div class="news-item-img mb-2">
-										<img src="img/news/news1.png">
+						</div>
+						<div class="col-sm-12 col-md-3 col-lg-3 content_news_item">
+								<h2 class="content_news_title">
+									1Что 
+								</h2>
+								<div class="content_news_poster">
+									<img  class="img-fluid" src="img/content/content1.JPG">
+								</div>
+								<div class="content_news_info">
+									<div class="content_news_info_text">
+										<a href="#">
+											Список. Благотворительные организации, которые сейчас особенно нуждаются в помощи
+										</a>
+										<p class="content_news_info_text_par par">
+											Кризисные центры, приюты и хосписы
+										</p>
 									</div>
-									<div class="news-item-info">
-										<div class="news-item-info-text mb-3">
-											Lorem ipsum dolor sit amet, consectetuer adipiscingelit. Aenean commodo ligula eget dolor. Aenean massa. 
-										</div>
-										<div class="news-item-info-btn">
-											<a href="#" class="next-btn">
-												Читать далее
-											</a>
-										</div>
+									<div class="content_news_info_date date">
+										<data>13.04.2020</data>
 									</div>
 								</div>
-							</div>
+						</div>
+						<div class="col-sm-12 col-md-3 col-lg-3 content_news_item">
+								<h2 class="content_news_title">
+									1Что 
+								</h2>
+								<div class="content_news_poster">
+									<img  class="img-fluid" src="img/content/content1.JPG">
+								</div>
+								<div class="content_news_info">
+									<div class="content_news_info_text">
+										<a href="#">
+											Список. Благотворительные организации, которые сейчас особенно нуждаются в помощи
+										</a>
+										<p class="content_news_info_text_par par">
+											Кризисные центры, приюты и хосписы
+										</p>
+									</div>
+									<div class="content_news_info_date date">
+										<data>13.04.2020</data>
+									</div>
+								</div>
+						</div>
+						<div class="col-sm-12 col-md-3 col-lg-3 content_news_item">
+								<h2 class="content_news_title">
+									1Что 
+								</h2>
+								<div class="content_news_poster">
+									<img  class="img-fluid" src="img/content/content1.JPG">
+								</div>
+								<div class="content_news_info">
+									<div class="content_news_info_text">
+										<a href="#">
+											Список. Благотворительные организации, которые сейчас особенно нуждаются в помощи
+										</a>
+										<p class="content_news_info_text_par par">
+											Кризисные центры, приюты и хосписы
+										</p>
+									</div>
+									<div class="content_news_info_date date">
+										<data>13.04.2020</data>
+									</div>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -156,5 +207,8 @@
 		<footer class="footer" id="footer">footer</footer>
 	</div>
 	<script src="https://kit.fontawesome.com/883551ecee.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

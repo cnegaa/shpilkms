@@ -1,5 +1,6 @@
 
-/*main tags*/
+	/*main tags*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,20 +12,21 @@ html {
 
 body {
 	height: 100%;
-	font-family: 'Comfortaa', cursive;
+/*	font-family: Pompadur; 
+	font-family/*: ApercuPro-Mono.otf;*/*/
 	font-size: 14px;
 	color: #000;
+	line-height: 25px;
 }
 
+@font-face {
+    font-family: ApercuPro-Mono.otf; /* Имя шрифта */
+    src: url(fonts/ApercuPro-Mono.otf); /* Путь к файлу со шрифтом */
+   }
 
-h1 {
-	font-size: 4rem;
-	color: #fff;
-	margin: 0;
-}
-
-h2 {
-	font-size: 1.5rem;
+ul {
+	list-style-type: none;
+	margin: 0px;
 }
 
 a {
@@ -32,195 +34,135 @@ a {
 	color: #000;
 }
 
-a:hover {
-
-	text-decoration: none;
-	color: #8999A3;
-	cursor: pointer;
+a:hover { 
+    text-decoration: none;
+	color: #F32613;
 }
 
-
-a:active {
- 	opacity: 0.5; 
- 	color: #8999A3;
- } 
-   
-
-ul, li {
-	display: block;
+h1, h2 {
+	margin: 0px;
+	color: #2a5b2e;
+	font-size: 1em;
+	margin: 20px 0 20px 0;
 }
 
 
 
-/*main class*/
+	/*main class*/
 
-.wrapper { /*в desktop footer стоит не так как надо (если убратьь flex о все норм )*/
+.wrapper {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	height: 100%;
 }
 
-/*.main-btn:hover { должно пригодится 
-	cursor: pointer;
-} 
-
-.main-btn: a hover { 
-	color: #fff;
-} 
-
-.main-btn:active {
- 	background: #3c76b6; 
- } */
-
-
-.container {
-	padding: 0;
+.date {
+	font-size: 0.8em;
+	color: #605e5e;
 }
 
-.row {
-	margin: 0; /*если не поставить margin то в мобильной версии появляется отступ и прокрутка*/
+.par {
+	display: none;
+	font-size: 0.9em;
+	color: #605e5e;
 }
-/*header*/
+
+
+	/*main.promo*/
+
+.main-promo-img {
+	width: 100%;
+}
+
+.main-promo-second, .main-promo-thirds {
+	display: none;
+}
+
+	/*header*/
 
 .header {
-	background: url(../img/header_mobile.jpg) no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
-    height: 35vh;
-    color: #fff;
-    margin-bottom: 10%;
-}
-
-.burger {
-	display: block;
-	padding: 5%;
-}
-
-
-.menu-nav, .social { 
-	display: none;
+	background: url(https://regnum.ru/uploads/pictures/news/2017/08/17/regnum_picture_1503002228112792_big.jpg) no-repeat;
+	background-size: cover;
+	height: 300px;
 
 }
 
-.social {
+.header-brand img {
+	width: 300px;
+	height: 120px;
+}
+
+.header-brand {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
 
 }
 
-.herder-logo-text {
-	padding: 0.5% 3%;
-	font-size: 1.3rem;
-	background: red;
-	margin: 0; 
+	/*menu*/
+
+.toggle {
 	color: #fff;
+	padding: 10px;
+	display: block;
 }
 
-
-/*theme*/
-
-.theme {
-	display: none;
+.nav-bar {
+	background:#fff;
+	padding: 10px;
 }
 
-.theme-list { /*где должы быть эти классы в медиа или здесь */
+.nav-bar ul {
 	display: flex;
 	justify-content: space-between;
 }
 
-.theme-list-item {
+.nav-bar{
+	display: none;
+}
+
+	/*news-top и content_news_item*/
+
+.news-top, .content_news_item {
+	background: #D4F2F3;
+}
+
+.content_news_title, .content_news_poster {
+	display: none;
+}
+
+.news-top_list {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap:wrap;
 }
 
 
-/*content*/
 
-.news-item-img img {
+.news-top_list_item,.content_news_info, .content_news_first_info {
+	padding: 20px 0;
+	display: flex;
+	flex-direction:column-reverse;
 	width: 100%;
-	height: auto;
 }
 
-.news-item-info {
-	display: flex;
-	flex-direction: column;
+.news-top_list_item:hover {                
+	background: rgba(38,165,184,0.5);
 }
 
-.next-btn {
-	display: block;
-	color: #fff; 
-	background: #000; 
-	padding: 7px; 
-	border: 0;
-	text-align: center;
-} 
-
-/*footer */
-
-.footer {
-	background: #000;
-	padding: 2%;
-	color: #fff;
-	text-align: center;
+.content_news_item:hover {
+	background: rgba(38,165,184,0.5);
 }
 
-@media screen and (min-width: 576px) { 
+   /*content_news_first и content_news_item*/
 
-	.header {
-		margin-bottom: 0;
-	}
 
-	.header-menu {
-		display: block;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		background: #fff;
-		margin-bottom: 3%;
-	}
-
-	.header-menu a {
-		font-size: 13px;
-		/*padding: ; задать значение чтоб выделение элемента было одинаковым*/
-	}
-
-/*/*	.header-menu a:hover {
-		background: #FF0000;
-		color: #fff;
-	}
-*/
-	.menu-social {
-		display: block;
-	}
-
-	.burger {
-		display: none;
-	}
-
-	.menu-nav, .social {
-		display: block;
-		margin: 0;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.theme {
-		display: block;
-		background: #D4F2F3;
-	}
-
+.content_news_first_title, .content_news_first_info {
+	padding-left: 40px;
 }
-/*snezhana.efremova.98@bk.ru*/
 
-
-/*git config --global user.email "snezhana.efremova.98@bk.ru"
-git config --global user.name "sneggaa"
-
-
-snegaa
-
-shpilkms
-*/
+.content_news_title, .content_news_first_title {
+	color: #2a5b2e;
+	font-size: 1em;
+}

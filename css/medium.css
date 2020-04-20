@@ -1,0 +1,76 @@
+/*планшет*/
+@media (min-width: 576px) and (max-width: 992px) {
+	
+	/*main tags*/
+
+	.par {
+		display: block;
+		margin: 0px;	
+	}
+
+	.date {
+		margin-top: 10px;
+	}
+
+	/*main-promo*/
+
+	.main-promo-second {
+		display: block;
+	}
+	.main-promo-first,.main-promo-thirds {
+		display: none;
+	}
+
+	/*header */
+
+	.header {
+		background: url('../img/header/large-header.jpg');
+	}
+
+	/*menu*/
+
+	.nav-bar {
+		display: block;
+	}
+
+	.toggle {
+		display: none;
+	}
+
+	/*news-top и content_news_item*/
+
+	.news-top {
+		padding: 20px 0 20px 0;
+		font-size: 0.9em
+	}
+
+	.news-top_list_item {
+		text-align: center;
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+	}
+	.news-top_list_item:hover {
+		background: none;
+	}
+
+	.content_news_item:hover {
+		background: none;
+	}
+
+	/*content*/
+
+	.content_news_item {
+		background: none;
+	}
+
+	.content_news_info, .content_news_first_info {
+		display: flex;
+		flex-direction: column;
+	}
+	
+
+	.content_news_title, .content_news_poster {
+		display: block;
+	}
+}
